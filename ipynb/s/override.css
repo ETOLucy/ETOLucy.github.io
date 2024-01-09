@@ -1,4 +1,4 @@
-/*This file contains any manual css for this page that needs to override the global styles.
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>/*This file contains any manual css for this page that needs to override the global styles.
 This is only required when different pages style the same element differently. This is just
 a hack to deal with our current css styles and no new styling should be added in this file.*/
 
