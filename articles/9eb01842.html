@@ -6,7 +6,7 @@
 <meta property="og:description" content="一、数据结构基本概念 建议另外过一遍 严蔚敏课笔记注意：代码缩进本该为4个空格，这里为了美观和方便，缩进是2个空格。  数据 数据是信息的载体，是描述客观事物属性的数、字符及所有能输入到计算机中并被计算机程序识别和处理的符号的集合。数据是计算机程序加工的原料。  数据元素 数据元素是数据的基本单位，通常作为一个整体进行考虑和处理。  数据项 一个数据元素可由若干数据项组成，数据项是构成数据元素的不">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-10-12T13:34:19.000Z">
-<meta property="article:modified_time" content="2024-10-29T14:30:07.170Z">
+<meta property="article:modified_time" content="2024-11-05T03:19:29.924Z">
 <meta property="article:author" content="Lucy">
 <meta property="article:tag" content="Lucy的博客">
 <meta name="twitter:card" content="summary"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://lucy23.blog/articles/9eb01842"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
@@ -51,7 +51,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2024-10-29 22:30:07'
+  postUpdate: '2024-11-05 11:19:29'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -160,7 +160,7 @@ window.addEventListener('load',()=> { preloader.endLoading() })
 if (false) {
   document.addEventListener('pjax:send', () => { preloader.initLoading() })
   document.addEventListener('pjax:complete', () => { preloader.endLoading() })
-}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/cat-tou2.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">28</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Lucyの部落</a></span><div id="he-plugin-simple"></div><div id="none_space"></div><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">考研875数据结构</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-10-12T13:34:19.000Z" title="Created 2024-10-12 21:34:19">2024-10-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-10-29T14:30:07.170Z" title="Updated 2024-10-29 22:30:07">2024-10-29</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="考研875数据结构"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="一、数据结构基本概念"><a href="#一、数据结构基本概念" class="headerlink" title="一、数据结构基本概念"></a>一、数据结构基本概念</h2><blockquote>
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/cat-tou2.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">28</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Lucyの部落</a></span><div id="he-plugin-simple"></div><div id="none_space"></div><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">考研875数据结构</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-10-12T13:34:19.000Z" title="Created 2024-10-12 21:34:19">2024-10-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-11-05T03:19:29.924Z" title="Updated 2024-11-05 11:19:29">2024-11-05</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="考研875数据结构"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="一、数据结构基本概念"><a href="#一、数据结构基本概念" class="headerlink" title="一、数据结构基本概念"></a>一、数据结构基本概念</h2><blockquote>
 <p>建议另外过一遍 <a href="../../articles/fc6ebebe.html">严蔚敏课笔记</a><br>注意：代码缩进本该为4个空格，这里为了美观和方便，缩进是2个空格。</p>
 </blockquote>
 <h4 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h4><ul>
@@ -1280,12 +1280,246 @@ n + 1 &amp; \text{if } m = 0 \\
 </ul>
 <h3 id="掌握栈和队列的经典应用"><a href="#掌握栈和队列的经典应用" class="headerlink" title="掌握栈和队列的经典应用"></a>掌握栈和队列的经典应用</h3><h4 id="栈的应用"><a href="#栈的应用" class="headerlink" title="栈的应用"></a>栈的应用</h4><ul>
 <li>递归调用↑</li>
-<li>数制转换</li>
+<li>数制转换<br>十进制→八进制：从低位到高位产生八进制数的各个数位，从高位到地位顺序输出。<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">conversion</span><span class="params">()</span> &#123;</span><br><span class="line">  InitStack(S);</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;N);</span><br><span class="line">  <span class="keyword">while</span>(N) &#123;</span><br><span class="line">    Push(S, N % <span class="number">8</span>);</span><br><span class="line">    N = N / <span class="number">8</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">while</span>(!StackEmpty(S)) &#123;</span><br><span class="line">    Pop(S, e);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, e);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li>括号匹配的检验</li>
-<li>行编辑程序</li>
-<li>迷宫求解</li>
-<li>表达式求值</li>
 </ul>
+<ol>
+<li>在算法中设置一个栈，每读入一个括号，若是右括号，则要么使置于栈顶的最急迫的期待得以消解，要么是不合法的情况；</li>
+<li>若是左括号，则作为一个新的更急迫的期待压入栈中，自然使原有的在栈中的所有未消解的期待的急迫性都降了一级。</li>
+<li>另外，在算法的开始和结束时，栈都应该是空的。</li>
+</ol>
+<ul>
+<li>行编辑程序<br>一个简单的行编辑程序的功能是：接受用户的从终端输入的程序或数据，并存入用户的数据区。由于用户在终端上进行输入时，不能保证不出差错，因此，若在编辑程序中，“每接受一个字符即存入用户数据区”的做法显然不是最恰当的。<br>较好的做法是，设立一个输入缓冲区，用以接受用户输入的一行字符，然后逐行存入用户数据区。允许用户输入出差错，并在发现有误时可以及时更正。<br>例如，当用户发现刚刚键入的一个字符是错的时，可补进一个退格符“#”，以表示前一个字符无效；如果发现当前键入的行内差错较多或难以补救，则可以键入一个退行符“@”，以表示当前行中的字符均无效。<br>例如，假设从终端接受了这样的两行字符：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">whli##ilr#e(s#*s)</span><br><span class="line">  outcha@putchar(*s++);</span><br></pre></td></tr></table></figure>
+则实际有效的是下列两行：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">while(*s)</span><br><span class="line">  putchar(*s++);</span><br></pre></td></tr></table></figure>
+为此，可设这个输入缓冲区为一个栈结构，每当从终端接受了一个字符之后先作如下判别：</li>
+</ul>
+<ol>
+<li>如果它既不是退格符也不是退行符，则将该字符压入栈顶；</li>
+<li>如果是一个退格符，则从栈顶删去一个字符；</li>
+<li>如果它是一个退行符，则将字符栈清为空栈。<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">LineEdit</span><span class="params">()</span> &#123;</span><br><span class="line">  InitStack(S);</span><br><span class="line">  ch = getchar(); <span class="comment">//从终端接收第一个字符</span></span><br><span class="line">  <span class="keyword">while</span>(ch!=EOF) &#123; <span class="comment">//EOF为全文结束符</span></span><br><span class="line">    <span class="keyword">while</span>(ch!=EOF&amp;&amp;ch!=<span class="string">&#x27;\n&#x27;</span>) &#123;</span><br><span class="line">      <span class="keyword">switch</span>(ch) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;#&#x27;</span>: Pop(S, c); <span class="keyword">break</span>; <span class="comment">//仅当栈非空时退栈</span></span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;@&#x27;</span>: ClearStack(S); <span class="keyword">break</span>; <span class="comment">//重置S为空栈</span></span><br><span class="line">        <span class="keyword">default</span>: Push(S,ch); <span class="keyword">break</span>; <span class="comment">//有效字符进栈，未考虑栈满情形</span></span><br><span class="line">      &#125;</span><br><span class="line">      ch = getchar(); <span class="comment">//从终端接收下一个字符</span></span><br><span class="line">    &#125;</span><br><span class="line">    将从栈底到栈顶的栈内字符传送至调用过程的数据区;</span><br><span class="line">    ClearStack(S); <span class="comment">//重置S为空栈</span></span><br><span class="line">    <span class="keyword">if</span>(ch != EOF) ch = getchar();</span><br><span class="line">  &#125;</span><br><span class="line">  DestroyStack(S);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li>迷宫求解<br>BFS用队列，DFS用栈。<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//BFS</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line">using namespace <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> directions[<span class="number">4</span>][<span class="number">2</span>] = &#123;&#123;<span class="number">1</span>, <span class="number">0</span>&#125;, &#123;<span class="number">0</span>, <span class="number">1</span>&#125;, &#123;<span class="number">-1</span>, <span class="number">0</span>&#125;, &#123;<span class="number">0</span>, <span class="number">-1</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="type">bool</span> <span class="title function_">isValid</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y, <span class="type">int</span> n, <span class="type">int</span> m, <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;&gt;&amp; maze, <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="type">bool</span>&gt;&gt;&amp; visited)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> x &gt;= <span class="number">0</span> &amp;&amp; x &lt; n &amp;&amp; y &gt;= <span class="number">0</span> &amp;&amp; y &lt; m &amp;&amp; maze[x][y] == <span class="number">0</span> &amp;&amp; !visited[x][y];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">bfs</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;&gt;&amp; maze)</span> &#123;</span><br><span class="line">    <span class="type">int</span> n = maze.size();</span><br><span class="line">    <span class="type">int</span> m = maze[<span class="number">0</span>].size();</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="type">bool</span>&gt;&gt; visited(n, <span class="built_in">vector</span>&lt;<span class="type">bool</span>&gt;(m, <span class="literal">false</span>));</span><br><span class="line">    <span class="built_in">queue</span>&lt;<span class="built_in">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&gt; q;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Starting point</span></span><br><span class="line">    q.push(&#123;<span class="number">0</span>, <span class="number">0</span>&#125;);</span><br><span class="line">    visited[<span class="number">0</span>][<span class="number">0</span>] = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> steps = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (!q.empty()) &#123;</span><br><span class="line">        <span class="type">int</span> size = q.size();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; size; ++i) &#123;</span><br><span class="line">            <span class="keyword">auto</span> [x, y] = q.front();</span><br><span class="line">            q.pop();</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Check if we reached the end</span></span><br><span class="line">            <span class="keyword">if</span> (x == n - <span class="number">1</span> &amp;&amp; y == m - <span class="number">1</span>) <span class="keyword">return</span> steps;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; dir : directions) &#123;</span><br><span class="line">                <span class="type">int</span> nx = x + dir[<span class="number">0</span>];</span><br><span class="line">                <span class="type">int</span> ny = y + dir[<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span> (isValid(nx, ny, n, m, maze, visited)) &#123;</span><br><span class="line">                    q.push(&#123;nx, ny&#125;);</span><br><span class="line">                    visited[nx][ny] = <span class="literal">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        steps++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>; <span class="comment">// If there&#x27;s no path to the destination</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//DFS</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line">using namespace <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> directions[<span class="number">4</span>][<span class="number">2</span>] = &#123;&#123;<span class="number">1</span>, <span class="number">0</span>&#125;, &#123;<span class="number">0</span>, <span class="number">1</span>&#125;, &#123;<span class="number">-1</span>, <span class="number">0</span>&#125;, &#123;<span class="number">0</span>, <span class="number">-1</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="type">bool</span> <span class="title function_">dfs</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;&gt;&amp; maze, <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="type">bool</span>&gt;&gt;&amp; visited, <span class="type">int</span> x, <span class="type">int</span> y, <span class="type">int</span> n, <span class="type">int</span> m)</span> &#123;</span><br><span class="line">    <span class="comment">// If out of bounds or not a path, return false</span></span><br><span class="line">    <span class="keyword">if</span> (x &lt; <span class="number">0</span> || x &gt;= n || y &lt; <span class="number">0</span> || y &gt;= m || maze[x][y] == <span class="number">1</span> || visited[x][y]) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Check if reached destination</span></span><br><span class="line">    <span class="keyword">if</span> (x == n - <span class="number">1</span> &amp;&amp; y == m - <span class="number">1</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">    visited[x][y] = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span>&amp; dir : directions) &#123;</span><br><span class="line">        <span class="type">int</span> nx = x + dir[<span class="number">0</span>];</span><br><span class="line">        <span class="type">int</span> ny = y + dir[<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (dfs(maze, visited, nx, ny, n, m)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>; <span class="comment">// Path found</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>; <span class="comment">// No path found from this cell</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">bool</span> <span class="title function_">hasPathDFS</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;&gt;&amp; maze)</span> &#123;</span><br><span class="line">    <span class="type">int</span> n = maze.size();</span><br><span class="line">    <span class="type">int</span> m = maze[<span class="number">0</span>].size();</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="type">bool</span>&gt;&gt; visited(n, <span class="built_in">vector</span>&lt;<span class="type">bool</span>&gt;(m, <span class="literal">false</span>));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> dfs(maze, visited, <span class="number">0</span>, <span class="number">0</span>, n, m);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//书上写的（用栈）</span></span><br><span class="line"><span class="comment">//看不下去，太乱了</span></span><br></pre></td></tr></table></figure></li>
+<li>表达式求值<br><code>#</code>是表达式的结束符，为了算法简洁，在表达式的最左边也虚设一个<code>#</code>构成整个表达式的一对括号。<br><code>(</code>和<code>)</code>相遇时，表示括号内的运算已经完成，<code>#</code>和<code>#</code>相遇时表示整个表达式求值完毕。<br>两个工作栈，OPTR寄存运算符，OPND寄存操作数或运算结果。<br>对算术表达式<code>3*(7-2)</code>求值<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th><code>OPTR</code> 栈</th>
+<th><code>OPND</code> 栈</th>
+<th>输入字符</th>
+<th>主要操作</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><code>#</code></td>
+<td></td>
+<td><u>3</u>*(7-2)#</td>
+<td><code>PUSH(OPND, &#39;3&#39;)</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>#</code></td>
+<td>3</td>
+<td><u>*</u>(7-2)#</td>
+<td><code>PUSH(OPTR, &#39;*&#39;)</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>#*</code></td>
+<td>3</td>
+<td><u>(</u>7-2)#</td>
+<td><code>PUSH(OPTR, &#39;(&#39;)</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>#*(</code></td>
+<td>3</td>
+<td><u>7</u>-2)#</td>
+<td><code>PUSH(OPND, &#39;7&#39;)</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>#*(</code></td>
+<td>3 7</td>
+<td><u>-</u>2)#</td>
+<td><code>PUSH(OPTR, &#39;-&#39;)</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>#*(-</code></td>
+<td>3 7</td>
+<td><u>2</u>)#</td>
+<td><code>PUSH(OPND, &#39;2&#39;)</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>#*(-</code></td>
+<td>3 7 2</td>
+<td><u>)</u>#</td>
+<td><code>OPERATE(&#39;7&#39;, &#39;-&#39;, &#39;2&#39;)</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>#*(</code></td>
+<td>3 5</td>
+<td>)#</td>
+<td><code>POP(OPTR)&#123;消去一对括号&#125;</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>#*</code></td>
+<td>3 5</td>
+<td>#</td>
+<td><code>OPERATE(&#39;3&#39;, &#39;*&#39;, &#39;5&#39;)</code></td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>#</code></td>
+<td>15</td>
+<td>#</td>
+<td><code>RETURN(GETTOP(OPND))</code></td>
+</tr>
+</tbody></table>
+</li>
+<li>前缀、中缀、后缀表达式<br>前缀表达式：- + A * B - C D &#x2F; E F<br>中缀表达式：A + B * (C - D) - E &#x2F; F<br>后缀表达式：A B C D - * + E F &#x2F; -<br>前缀、中缀、后缀表达式分别对应表达式树的先序、中序、后序遍历。中缀表达式的括号是必须的。</li>
+</ul>
+<p><strong>转换中缀表达式为前缀表达式的步骤</strong></p>
+<ol>
+<li>首先构造一个运算符栈（也可放置括号），栈中的运算符（以括号为分界点）按照<strong>越往栈顶优先级不降低</strong>的原则进行排列。</li>
+<li>从右至左扫描中缀表达式，从右边第一个字符开始判断：<ul>
+<li>如果当前字符是数字，则分析到数字串的结尾并将数字串直接输出。</li>
+<li>如果是运算符，则比较优先级：<ul>
+<li>如果当前运算符的<strong>优先级大于等于</strong>栈顶运算符的优先级（当栈顶是括号时，直接入栈），则将运算符直接<strong>入栈</strong>。</li>
+<li>否则，将栈顶运算符出栈并输出，直到当前运算符的优先级大于等于栈顶运算符的优先级（当栈顶是括号时，直接入栈），再将当前运算符入栈。</li>
+</ul>
+</li>
+<li>如果是括号，则根据括号的方向进行处理：<ul>
+<li>如果是右括号，则直接入栈；</li>
+<li>否则，在遇到左括号之前，将所有的运算符全部出栈并输出；遇到右括号后将左右括号一起出栈（但不输出）。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>重复步骤 2，直到扫描结束，将栈内剩余运算符全部出栈并输出。最后逆序输出字符串，中缀表达式就转换为前缀表达式了。</li>
+</ol>
+<p><strong>转换示例表格</strong><br>将中缀表达式“1+((2+3)*4)-5”转换为前缀表达式。</p>
+<table>
+<thead>
+<tr>
+<th>中缀表达式</th>
+<th>前缀表达式</th>
+<th>运算符栈（栈顶）</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>5</td>
+<td>5</td>
+<td>空</td>
+<td><code>5</code> 是数字串，直接输出</td>
+</tr>
+<tr>
+<td>-</td>
+<td>5</td>
+<td>-</td>
+<td><code>-</code> 栈内无运算符，直接入栈</td>
+</tr>
+<tr>
+<td>)</td>
+<td>5</td>
+<td>- )</td>
+<td><code>)</code> 直接入栈</td>
+</tr>
+<tr>
+<td>4</td>
+<td>5 4</td>
+<td>- )</td>
+<td><code>4</code> 是数字串，直接输出</td>
+</tr>
+<tr>
+<td>*</td>
+<td>5 4</td>
+<td>- ) *</td>
+<td><code>*</code> 栈顶是括号，直接入栈</td>
+</tr>
+<tr>
+<td>)</td>
+<td>5 4</td>
+<td>- ) * )</td>
+<td><code>)</code> 直接入栈</td>
+</tr>
+<tr>
+<td>3</td>
+<td>5 4 3</td>
+<td>- ) * )</td>
+<td><code>3</code> 是数字串，直接输出</td>
+</tr>
+<tr>
+<td>+</td>
+<td>5 4 3</td>
+<td>- ) * ) +</td>
+<td><code>+</code> 栈顶是括号，直接入栈</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5 4 3 2</td>
+<td>- ) * ) +</td>
+<td><code>2</code> 是数字串，直接输出</td>
+</tr>
+<tr>
+<td>(</td>
+<td>5 4 3 2 +</td>
+<td>- ) *</td>
+<td><code>(</code> 抵消栈中最后一个 <code>)</code> 并释放它们之间的 <code>+</code></td>
+</tr>
+<tr>
+<td>(</td>
+<td>5 4 3 2 + *</td>
+<td>-</td>
+<td><code>(</code> 抵消方法同上</td>
+</tr>
+<tr>
+<td>+</td>
+<td>5 4 3 2 + *</td>
+<td>- +</td>
+<td><code>+</code> 优先级大于等于栈顶运算符，直接入栈</td>
+</tr>
+<tr>
+<td>1</td>
+<td>5 4 3 2 + * 1</td>
+<td>- +</td>
+<td><code>1</code> 是数字串，直接输出</td>
+</tr>
+<tr>
+<td>空</td>
+<td>5 4 3 2 + * 1 + -</td>
+<td>空</td>
+<td>扫描结束，将栈内剩余运算符全部出栈并输出</td>
+</tr>
+<tr>
+<td>空</td>
+<td>- + 1 * + 2 3 4 5</td>
+<td>空</td>
+<td>逆序输出字符串</td>
+</tr>
+</tbody></table>
+<p><strong>中缀表达式转后缀表达式的步骤</strong></p>
+<ol>
+<li>设定一个运算符栈。</li>
+<li>假设表达式的结束符为 <code>#</code>，并预设运算符栈底元素也为 <code>#</code>。</li>
+<li>扫描表达式，按以下规则处理每个字符：<ul>
+<li>如果当前字符是操作数，则直接添加到后缀表达式中。</li>
+<li>如果当前字符是运算符且优先级<strong>高于</strong>栈顶运算符，则将其入栈；否则，将从栈顶开始，依次<strong>弹出</strong>栈中<strong>优先级高于或等于</strong>当前运算符的所有运算符，并加入后缀表达式，然后将当前运算符入栈。</li>
+<li>如果当前字符是结束符 <code>#</code>，则依次将栈中剩余的运算符出栈并添加到后缀表达式。</li>
+<li>如果当前字符是左括号 <code>(</code>，则直接入栈。</li>
+<li>如果当前字符是右括号 <code>)</code>，则从栈顶开始，依次将运算符出栈并添加到后缀表达式，直到遇到左括号 <code>(</code>。将 <code>(</code> 出栈，但不添加到后缀表达式中，然后继续扫描表达式。</li>
+</ul>
+</li>
+</ol>
+<p>（详见gpt和王道p93，书上没看到有写）</p>
 <h4 id="队列的应用"><a href="#队列的应用" class="headerlink" title="队列的应用"></a>队列的应用</h4><ul>
 <li><p>离散事件模拟</p>
 </li>
