@@ -6,7 +6,7 @@
 <meta property="og:description" content="第三章 关系数据库关系模型概述关系数据结构 关系数据模型源于数学。 用二维表来组织数据，这个二维表在关系数据库中就称为关系。 关系数据库就是表或者说是关系的集合。 关系系统要求让用户所感觉的数据库就是一张张表。 在关系系统中，表是逻辑结构而不是物理结构。  关系操作传统的关系运算 并（Union）  交（Intersection）  差（Difference）  广义笛卡尔乘积（Extended">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2025-02-28T04:13:05.000Z">
-<meta property="article:modified_time" content="2025-03-03T03:49:29.332Z">
+<meta property="article:modified_time" content="2025-03-05T07:41:21.451Z">
 <meta property="article:author" content="Lucy">
 <meta property="article:tag" content="Lucy的博客">
 <meta name="twitter:card" content="summary"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://lucy23.blog/articles/7de3dde6"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
@@ -51,7 +51,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2025-03-03 11:49:29'
+  postUpdate: '2025-03-05 15:41:21'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -160,7 +160,7 @@ window.addEventListener('load',()=> { preloader.endLoading() })
 if (false) {
   document.addEventListener('pjax:send', () => { preloader.initLoading() })
   document.addEventListener('pjax:complete', () => { preloader.endLoading() })
-}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/cat-tou2.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">28</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Lucyの部落</a></span><div id="he-plugin-simple"></div><div id="none_space"></div><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">考研数据库</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-02-28T04:13:05.000Z" title="Created 2025-02-28 12:13:05">2025-02-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-03-03T03:49:29.332Z" title="Updated 2025-03-03 11:49:29">2025-03-03</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="考研数据库"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="第三章-关系数据库"><a href="#第三章-关系数据库" class="headerlink" title="第三章 关系数据库"></a>第三章 关系数据库</h1><h2 id="关系模型概述"><a href="#关系模型概述" class="headerlink" title="关系模型概述"></a>关系模型概述</h2><h3 id="关系数据结构"><a href="#关系数据结构" class="headerlink" title="关系数据结构"></a>关系数据结构</h3><ul>
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/cat-tou2.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">28</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Lucyの部落</a></span><div id="he-plugin-simple"></div><div id="none_space"></div><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">考研数据库</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-02-28T04:13:05.000Z" title="Created 2025-02-28 12:13:05">2025-02-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-03-05T07:41:21.451Z" title="Updated 2025-03-05 15:41:21">2025-03-05</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="考研数据库"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="第三章-关系数据库"><a href="#第三章-关系数据库" class="headerlink" title="第三章 关系数据库"></a>第三章 关系数据库</h1><h2 id="关系模型概述"><a href="#关系模型概述" class="headerlink" title="关系模型概述"></a>关系模型概述</h2><h3 id="关系数据结构"><a href="#关系数据结构" class="headerlink" title="关系数据结构"></a>关系数据结构</h3><ul>
 <li>关系数据<u>模型</u>源于<u>数学</u>。</li>
 <li>用<strong>二维表</strong>来组织数据，这个二维表在关系数据库中就称为<strong>关系</strong>。</li>
 <li>关系数据库就是<u><strong>表</strong>或者说是<strong>关系</strong></u>的<strong>集合</strong>。</li>
@@ -994,4 +994,781 @@ if (false) {
 例2．为Student表的Sid列创建唯一的聚簇索引。<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">UNIQUE</span> CLUSTERED </span><br><span class="line">   INDEX Sid_ind</span><br><span class="line">   <span class="keyword">ON</span> Stuent (Sid ) </span><br></pre></td></tr></table></figure></li>
 <li><strong>删除索引</strong><br>删除索引语句格式：<br><code>DROP INDEX &lt;索引名&gt;</code><br>例3．删除Student表中的Sname_ind索引。<br><code>DROP INDEX Sname_ind</code></li>
 </ul>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://lucy23.blog">Lucy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://lucy23.blog/articles/7de3dde6.html">http://lucy23.blog/articles/7de3dde6.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/articles/50b60a8e.html"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">考研操作系统</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">1.</span> <span class="toc-text">第三章 关系数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B%E6%A6%82%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text">关系模型概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-number">1.1.1.</span> <span class="toc-text">关系数据结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%93%8D%E4%BD%9C"><span class="toc-number">1.1.2.</span> <span class="toc-text">关系操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%A0%E7%BB%9F%E7%9A%84%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">传统的关系运算</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%93%E9%97%A8%E7%9A%84%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">专门的关系运算</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C"><span class="toc-number">1.1.3.</span> <span class="toc-text">关系模型的数据操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%AE%8C%E6%95%B4%E6%80%A7%E7%BA%A6%E6%9D%9F"><span class="toc-number">1.1.4.</span> <span class="toc-text">数据完整性约束</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD%E4%B8%8E%E5%BD%A2%E5%BC%8F%E5%8C%96%E5%AE%9A%E4%B9%89"><span class="toc-number">1.2.</span> <span class="toc-text">关系数据模型的基本术语与形式化定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD"><span class="toc-number">1.2.1.</span> <span class="toc-text">关系数据模型的基本术语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E5%BD%A2%E5%BC%8F%E5%8C%96%E5%AE%9A%E4%B9%89"><span class="toc-number">1.2.2.</span> <span class="toc-text">关系数据结构及其形式化定义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7%E7%BA%A6%E6%9D%9F"><span class="toc-number">1.3.</span> <span class="toc-text">关系模型的完整性约束</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E4%BD%93%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="toc-number">1.3.1.</span> <span class="toc-text">实体完整性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E7%85%A7%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="toc-number">1.3.2.</span> <span class="toc-text">参照完整性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E5%AE%9A%E4%B9%89%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="toc-number">1.3.3.</span> <span class="toc-text">用户定义的完整性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0"><span class="toc-number">1.4.</span> <span class="toc-text">关系代数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.4.1.</span> <span class="toc-text">关系运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%A0%E7%BB%9F%E7%9A%84%E9%9B%86%E5%90%88%E8%BF%90%E7%AE%97"><span class="toc-number">1.4.2.</span> <span class="toc-text">传统的集合运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%93%E9%97%A8%E7%9A%84%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97-1"><span class="toc-number">1.4.3.</span> <span class="toc-text">专门的关系运算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%89%E6%8B%A9"><span class="toc-number">1.4.3.1.</span> <span class="toc-text">选择</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8A%95%E5%BD%B1"><span class="toc-number">1.4.3.2.</span> <span class="toc-text">投影</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.4.3.3.</span> <span class="toc-text">连接</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC4%E7%AB%A0-SQL%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80"><span class="toc-number">2.</span> <span class="toc-text">第4章 SQL语言基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">2.1.</span> <span class="toc-text">基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL%E8%AF%AD%E8%A8%80%E7%9A%84%E5%8F%91%E5%B1%95"><span class="toc-number">2.1.1.</span> <span class="toc-text">SQL语言的发展</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-number">2.1.2.</span> <span class="toc-text">SQL语言的特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL%E8%AF%AD%E8%A8%80%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0"><span class="toc-number">2.1.3.</span> <span class="toc-text">SQL语言功能概述</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.</span> <span class="toc-text">SQL的数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%80%BC%E5%9E%8B"><span class="toc-number">2.2.1.</span> <span class="toc-text">数值型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%9E%8B"><span class="toc-number">2.2.2.</span> <span class="toc-text">字符串型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E7%BC%96%E7%A0%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.2.1.</span> <span class="toc-text">普通编码字符串类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%9F%E4%B8%80%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.2.2.</span> <span class="toc-text">统一字符编码字符串类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.2.3.</span> <span class="toc-text">二进制字符串类型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E5%9E%8B"><span class="toc-number">2.2.3.</span> <span class="toc-text">日期时间型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%A7%E5%B8%81%E5%9E%8B"><span class="toc-number">2.2.4.</span> <span class="toc-text">货币型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89%E3%80%81%E5%88%A0%E9%99%A4%E5%8F%8A%E4%BF%AE%E6%94%B9"><span class="toc-number">2.3.</span> <span class="toc-text">基本表的定义、删除及修改</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89%E4%B8%8E%E5%88%A0%E9%99%A4"><span class="toc-number">2.3.1.</span> <span class="toc-text">基本表的定义与删除</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E8%A1%A8%E7%BB%93%E6%9E%84"><span class="toc-number">2.3.2.</span> <span class="toc-text">修改表结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E5%8A%9F%E8%83%BD"><span class="toc-number">2.4.</span> <span class="toc-text">数据查询功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="toc-number">2.4.1.</span> <span class="toc-text">查询语句的基本结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.4.2.</span> <span class="toc-text">简单查询</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E8%A1%A8%E4%B8%AD%E8%8B%A5%E5%B9%B2%E5%88%97"><span class="toc-number">2.4.2.1.</span> <span class="toc-text">选择表中若干列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E8%A1%A8%E4%B8%AD%E8%8B%A5%E5%B9%B2%E5%85%83%E7%BB%84"><span class="toc-number">2.4.2.2.</span> <span class="toc-text">选择表中若干元组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E6%9F%A5%E8%AF%A2%E7%BB%93%E6%9E%9C%E8%BF%9B%E8%A1%8C%E6%8E%92%E5%BA%8F"><span class="toc-number">2.4.2.3.</span> <span class="toc-text">对查询结果进行排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0%E6%B1%87%E6%80%BB%E6%95%B0%E6%8D%AE"><span class="toc-number">2.4.2.4.</span> <span class="toc-text">使用计算函数汇总数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E6%9F%A5%E8%AF%A2%E7%BB%93%E6%9E%9C%E8%BF%9B%E8%A1%8C%E5%88%86%E7%BB%84%E8%AE%A1%E7%AE%97"><span class="toc-number">2.4.2.5.</span> <span class="toc-text">对查询结果进行分组计算</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%A1%A8%E8%BF%9E%E6%8E%A5%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.4.3.</span> <span class="toc-text">多表连接查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%90%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.4.4.</span> <span class="toc-text">子查询</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%94%B9%E5%8A%9F%E8%83%BD"><span class="toc-number">2.5.</span> <span class="toc-text">数据更改功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE"><span class="toc-number">2.5.1.</span> <span class="toc-text">插入数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E6%95%B0%E6%8D%AE"><span class="toc-number">2.5.2.</span> <span class="toc-text">更新数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE"><span class="toc-number">2.5.3.</span> <span class="toc-text">删除数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E7%AB%8B%E4%B8%8E%E5%88%A0%E9%99%A4%E7%B4%A2%E5%BC%95"><span class="toc-number">2.6.</span> <span class="toc-text">建立与删除索引</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">2.6.1.</span> <span class="toc-text">索引的概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">2.6.2.</span> <span class="toc-text">索引的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%81%9A%E7%B0%87%E7%B4%A2%E5%BC%95"><span class="toc-number">2.6.2.1.</span> <span class="toc-text">聚簇索引</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9D%9E%E8%81%9A%E7%B0%87%E7%B4%A2%E5%BC%95"><span class="toc-number">2.6.2.2.</span> <span class="toc-text">非聚簇索引</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%94%AF%E4%B8%80%E7%B4%A2%E5%BC%95"><span class="toc-number">2.6.2.3.</span> <span class="toc-text">唯一索引</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%92%8C%E5%88%A0%E9%99%A4%E7%B4%A2%E5%BC%95"><span class="toc-number">2.6.3.</span> <span class="toc-text">创建和删除索引</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Lucy</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="Chat"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/cat.js"></script><script defer src="/js/cursor.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js" type="application/javascript"></script><script src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script><script async data-pjax src="/js/newYear.js"></script><canvas id="universe"></canvas><script src="/js/universe.js"></script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
+<h1 id="第6章-实现数据完整性约束"><a href="#第6章-实现数据完整性约束" class="headerlink" title="第6章 实现数据完整性约束"></a>第6章 实现数据完整性约束</h1><h2 id="数据完整性基本概念"><a href="#数据完整性基本概念" class="headerlink" title="数据完整性基本概念"></a>数据完整性基本概念</h2><h2 id="实现声明完整性"><a href="#实现声明完整性" class="headerlink" title="实现声明完整性"></a>实现声明完整性</h2><h2 id="实现过程完整性"><a href="#实现过程完整性" class="headerlink" title="实现过程完整性"></a>实现过程完整性</h2><h1 id="第7章-关系数据库规范化理论"><a href="#第7章-关系数据库规范化理论" class="headerlink" title="第7章 关系数据库规范化理论"></a>第7章 关系数据库规范化理论</h1><h2 id="函数依赖"><a href="#函数依赖" class="headerlink" title="函数依赖"></a>函数依赖</h2><h2 id="关系规范化"><a href="#关系规范化" class="headerlink" title="关系规范化"></a>关系规范化</h2><h3 id="关系模式中的码"><a href="#关系模式中的码" class="headerlink" title="关系模式中的码"></a>关系模式中的码</h3><h3 id="范式"><a href="#范式" class="headerlink" title="范式"></a>范式</h3><blockquote>
+<p>数据库的三大范式（3NF）是关系数据库设计中的基本规则，主要用于减少数据冗余、提高数据一致性和完整性。它们分别是第一范式（1NF）、第二范式（2NF）和第三范式（3NF）。</p>
+</blockquote>
+<h4 id="第一范式（1NF）——确保原子性"><a href="#第一范式（1NF）——确保原子性" class="headerlink" title="第一范式（1NF）——确保原子性"></a>第一范式（1NF）——确保原子性</h4><ul>
+<li><p><strong>定义：</strong><br>第一范式（1NF）要求数据表中的所有字段必须具有<strong>原子性（Atomicity）</strong>，<u>即每个字段的值必须是不可再分的最小单位</u>，不能存储多个值。</p>
+</li>
+<li><p><strong>要求：</strong></p>
+<ol>
+<li><strong>每一列只能存储单一值</strong>（即不允许有数组、列表、集合等）。</li>
+<li><strong>所有列必须具有相同的数据类型</strong>。</li>
+<li><strong>必须有唯一标识（主键）</strong>，确保每一行是唯一的。</li>
+</ol>
+</li>
+<li><p><strong>示例（未满足1NF）：</strong></p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>学号</th>
+<th>姓名</th>
+<th>课程</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1001</td>
+<td>张三</td>
+<td>数学, 物理</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>李四</td>
+<td>英语, 计算机</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>上表中，”课程” 列存储了多个值（数学、物理），<strong>不满足1NF</strong>。</p>
+</blockquote>
+<ul>
+<li><strong>修改后（满足1NF）：</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>学号</th>
+<th>姓名</th>
+<th>课程</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1001</td>
+<td>张三</td>
+<td>数学</td>
+</tr>
+<tr>
+<td>1001</td>
+<td>张三</td>
+<td>物理</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>李四</td>
+<td>英语</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>李四</td>
+<td>计算机</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>现在，每个字段的值都是<strong>不可再分的最小单位</strong>，满足<strong>第一范式（1NF）</strong>。</p>
+</blockquote>
+<h4 id="第二范式（2NF）——消除部分依赖"><a href="#第二范式（2NF）——消除部分依赖" class="headerlink" title="第二范式（2NF）——消除部分依赖"></a>第二范式（2NF）——消除部分依赖</h4><ul>
+<li><p><strong>定义：</strong><br>第二范式（2NF）要求数据库表必须满足1NF，同时<strong>消除非主键列对主键的部分依赖</strong>（Partial Dependency）。</p>
+</li>
+<li><p>要求：</p>
+<ol>
+<li>先满足1NF。</li>
+<li>所有非主键字段必须完全依赖于主键，而不能只依赖于主键的一部分。</li>
+</ol>
+</li>
+<li><p><strong>示例（未满足2NF）：</strong><br>假设一个课程成绩表：</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>学号</th>
+<th>课程</th>
+<th>课程名称</th>
+<th>分数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1001</td>
+<td>MATH</td>
+<td>高等数学</td>
+<td>90</td>
+</tr>
+<tr>
+<td>1001</td>
+<td>CS</td>
+<td>C语言</td>
+<td>85</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>MATH</td>
+<td>高等数学</td>
+<td>88</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>这里，主键是 <strong>（学号，课程）</strong> 的组合，但”课程名称”只依赖于”课程”，而不是整个主键（学号, 课程）。部分依赖导致数据冗余，因为”课程名称”重复存储。</p>
+</blockquote>
+<ul>
+<li><p><strong>修改后（满足2NF）：</strong><br>将数据拆分成两张表：</p>
+</li>
+<li><p><strong>课程成绩表（满足2NF）：</strong></p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>学号</th>
+<th>课程</th>
+<th>分数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1001</td>
+<td>MATH</td>
+<td>90</td>
+</tr>
+<tr>
+<td>1001</td>
+<td>CS</td>
+<td>85</td>
+</tr>
+<tr>
+<td>1002</td>
+<td>MATH</td>
+<td>88</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>课程信息表（满足2NF）：</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>课程</th>
+<th>课程名称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MATH</td>
+<td>高等数学</td>
+</tr>
+<tr>
+<td>CS</td>
+<td>C语言</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>现在，”课程名称” 不再重复存储，解决了部分依赖问题。</p>
+</blockquote>
+<h4 id="第三范式（3NF）——消除传递依赖"><a href="#第三范式（3NF）——消除传递依赖" class="headerlink" title="第三范式（3NF）——消除传递依赖"></a>第三范式（3NF）——消除传递依赖</h4><ul>
+<li><p><strong>定义：</strong><br>第三范式（3NF）要求数据库表必须满足2NF，并<strong>消除非主键字段对主键的传递依赖</strong>（Transitive Dependency）。</p>
+</li>
+<li><p><strong>要求：</strong></p>
+<ol>
+<li>先满足2NF。</li>
+<li>非主键列必须直接依赖于主键，而不能通过其他非主键列间接依赖主键。</li>
+</ol>
+</li>
+<li><p><strong>示例（未满足3NF）：</strong><br>假设有一张员工表：</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>员工ID</th>
+<th>姓名</th>
+<th>部门ID</th>
+<th>部门名称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>101</td>
+<td>张三</td>
+<td>D01</td>
+<td>财务部</td>
+</tr>
+<tr>
+<td>102</td>
+<td>李四</td>
+<td>D02</td>
+<td>IT部</td>
+</tr>
+<tr>
+<td>103</td>
+<td>王五</td>
+<td>D01</td>
+<td>财务部</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>这里，”部门名称” 依赖于 “部门ID”，而”部门ID” 又依赖于”员工ID”，导致传递依赖，会引发数据冗余和一致性问题。</p>
+</blockquote>
+<ul>
+<li><p><strong>修改后（满足3NF）：</strong><br>拆分成两张表：</p>
+</li>
+<li><p><strong>员工表（满足3NF）：</strong></p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>员工ID</th>
+<th>姓名</th>
+<th>部门ID</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>101</td>
+<td>张三</td>
+<td>D01</td>
+</tr>
+<tr>
+<td>102</td>
+<td>李四</td>
+<td>D02</td>
+</tr>
+<tr>
+<td>103</td>
+<td>王五</td>
+<td>D01</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>部门表（满足3NF）：</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>部门ID</th>
+<th>部门名称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>D01</td>
+<td>财务部</td>
+</tr>
+<tr>
+<td>D02</td>
+<td>IT部</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>现在，”部门名称” 直接依赖于”部门ID”，而不是通过”员工ID” 间接依赖主键，解决了传递依赖问题。</p>
+</blockquote>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><table>
+<thead>
+<tr>
+<th>范式</th>
+<th>主要目标</th>
+<th>关键要求</th>
+<th>解决的问题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1NF</td>
+<td>确保数据原子性</td>
+<td>每列只能存储单一值</td>
+<td>不能有重复值或数组</td>
+</tr>
+<tr>
+<td>2NF</td>
+<td>消除部分依赖</td>
+<td>非主键列必须完全依赖主键</td>
+<td>避免数据冗余，减少更新异常</td>
+</tr>
+<tr>
+<td>3NF</td>
+<td>消除传递依赖</td>
+<td>非主键列不能依赖于另一个非主键列</td>
+<td>避免数据冗余，增强数据一致性</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>这样，数据库的设计就更加规范化、易维护、减少冗余，提高查询效率。</p>
+</blockquote>
+<h4 id="BCNF"><a href="#BCNF" class="headerlink" title="BCNF"></a>BCNF</h4><blockquote>
+<p>在第三范式（3NF）的基础上，还有一个更严格的范式——<strong>巴斯-科德范式（BCNF，Boyce-Codd Normal Form）</strong>。BCNF是3NF的强化版本，进一步减少了数据冗余和异常情况。</p>
+</blockquote>
+<ul>
+<li><strong>任何一个BCNF必然满足：</strong><ol>
+<li>所有非主属性都完全函数依赖于每个候选键</li>
+<li>所有主属性都完全函数依赖于每个不包含它的候选键</li>
+<li>没有任何属性完全函数依赖于非候选键的任何一组属性</li>
+</ol>
+</li>
+</ul>
+<h4 id="3NF-与-BCNF-的关系"><a href="#3NF-与-BCNF-的关系" class="headerlink" title="3NF 与 BCNF 的关系"></a><strong>3NF 与 BCNF 的关系</strong></h4><ul>
+<li><strong>BCNF 是 3NF 的加强版，满足 BCNF 一定满足 3NF，但满足 3NF 不一定满足 BCNF。</strong></li>
+<li><strong>3NF 允许某些非主属性依赖于非主键的候选键，而 BCNF 不允许任何非主属性依赖于非主键。</strong></li>
+<li>BCNF 解决了 3NF 可能出现的<strong>候选键的部分依赖</strong>问题。</li>
+</ul>
+<h2 id="BCNF-示例"><a href="#BCNF-示例" class="headerlink" title="BCNF 示例"></a><strong>BCNF 示例</strong></h2><h3 id="示例（满足3NF，但不满足BCNF）："><a href="#示例（满足3NF，但不满足BCNF）：" class="headerlink" title="示例（满足3NF，但不满足BCNF）："></a><strong>示例（满足3NF，但不满足BCNF）：</strong></h3><table>
+<thead>
+<tr>
+<th>学生ID</th>
+<th>课程</th>
+<th>教师</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>S1</td>
+<td>C1</td>
+<td>T1</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>C2</td>
+<td>T2</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>C1</td>
+<td>T1</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p><strong>候选键：</strong>(学生ID, 课程)  </p>
+</li>
+<li><p><strong>函数依赖关系：</strong>  </p>
+<ol>
+<li><strong>(学生ID, 课程) → 教师</strong> ✅（主键决定教师）</li>
+<li><strong>教师 → 课程</strong> ❌（违反BCNF，因为”教师”不是候选键，但它能决定”课程”）</li>
+</ol>
+</li>
+<li><p><strong>问题：</strong></p>
+<ol>
+<li><strong>一个教师只能教授一个课程</strong>，但由于”教师”不是候选键，它不应该决定”课程”。</li>
+<li>这可能导致数据异常，如如果一个教师更换课程，所有相关记录都要更新。</li>
+</ol>
+</li>
+</ul>
+<h3 id="修改后（满足BCNF）："><a href="#修改后（满足BCNF）：" class="headerlink" title="修改后（满足BCNF）："></a><strong>修改后（满足BCNF）：</strong></h3><p>拆分成两张表：</p>
+<h4 id="学生-选课表"><a href="#学生-选课表" class="headerlink" title="学生-选课表"></a><strong>学生-选课表</strong></h4><table>
+<thead>
+<tr>
+<th>学生ID</th>
+<th>课程</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>S1</td>
+<td>C1</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>C2</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>C1</td>
+</tr>
+</tbody></table>
+<h4 id="课程-教师表"><a href="#课程-教师表" class="headerlink" title="课程-教师表"></a><strong>课程-教师表</strong></h4><table>
+<thead>
+<tr>
+<th>课程</th>
+<th>教师</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C1</td>
+<td>T1</td>
+</tr>
+<tr>
+<td>C2</td>
+<td>T2</td>
+</tr>
+</tbody></table>
+<p>现在，<strong>所有的函数依赖的左侧都是候选键</strong>，满足 BCNF。</p>
+<h2 id="3NF-与-BCNF-的对比总结"><a href="#3NF-与-BCNF-的对比总结" class="headerlink" title="3NF 与 BCNF 的对比总结"></a><strong>3NF 与 BCNF 的对比总结</strong></h2><table>
+<thead>
+<tr>
+<th></th>
+<th><strong>3NF</strong></th>
+<th><strong>BCNF</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>要求</strong></td>
+<td>所有非主属性必须完全依赖于候选键；允许非主属性依赖于候选键（但不能传递依赖）</td>
+<td>所有属性都必须完全依赖于候选键；不允许任何非主属性依赖于非主键</td>
+</tr>
+<tr>
+<td><strong>数据冗余</strong></td>
+<td>可能仍然存在一定的数据冗余</td>
+<td>更严格地消除冗余</td>
+</tr>
+<tr>
+<td><strong>异常情况</strong></td>
+<td>可能仍然存在某些更新异常</td>
+<td>彻底消除更新异常</td>
+</tr>
+<tr>
+<td><strong>使用场景</strong></td>
+<td>适用于大多数数据库设计</td>
+<td>适用于更严格的数据库设计，特别是需要高数据一致性的场景</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>一般情况下，<strong>3NF 已经能满足大多数应用需求</strong>，但如果数据冗余仍然存在，就需要<strong>进一步拆分表，满足 BCNF</strong>。</p>
+</blockquote>
+<h2 id="关系模式的分解准则"><a href="#关系模式的分解准则" class="headerlink" title="关系模式的分解准则"></a><strong>关系模式的分解准则</strong></h2><p>关系模式的分解应满足以下三个基本准则：</p>
+<h3 id="1-无损连接性（Lossless-Join）"><a href="#1-无损连接性（Lossless-Join）" class="headerlink" title="1. 无损连接性（Lossless Join）"></a><strong>1. 无损连接性（Lossless Join）</strong></h3><p><strong>分解后的关系必须能够通过自然连接（natural join）或其他连接操作，</strong>不丢失原始数据，即：  </p>
+<blockquote>
+<p><strong>R 被分解为 R1 和 R2，必须有 R1 ⨝ R2 &#x3D; R（原始关系）</strong>。</p>
+</blockquote>
+<p><strong>重要性：</strong>  </p>
+<ul>
+<li>避免数据丢失，确保可以正确恢复原始关系。  </li>
+<li>如果不满足无损连接性，可能导致部分信息丢失，影响查询结果的完整性。</li>
+</ul>
+<p><strong>无损连接的充要条件（Heath定理）：</strong><br>对于关系模式 <strong>R(A, B, C)</strong> 被分解为 <strong>R1(A, B)</strong> 和 **R2(A, C)**，只要：</p>
+<blockquote>
+<p><strong>R1 ∩ R2 能够决定其中任意一个关系（即 R1 ∩ R2 → R1 或 R1 ∩ R2 → R2）</strong>，则该分解是无损的。</p>
+</blockquote>
+<h3 id="2-依赖保持（Dependency-Preservation）"><a href="#2-依赖保持（Dependency-Preservation）" class="headerlink" title="2. 依赖保持（Dependency Preservation）"></a><strong>2. 依赖保持（Dependency Preservation）</strong></h3><p><strong>分解后的关系应能保持原始关系中的所有函数依赖关系</strong>，即：</p>
+<blockquote>
+<p><strong>R1 和 R2 的联合应该能够表示原始关系 R 的所有函数依赖。</strong></p>
+</blockquote>
+<p><strong>重要性：</strong>  </p>
+<ul>
+<li>确保在分解后，不需要进行额外的连接操作来检查数据一致性。  </li>
+<li>若不满足该条件，则可能需要跨多个表进行连接查询才能检查某些约束，影响效率。</li>
+</ul>
+<p><strong>示例（不满足依赖保持）：</strong><br>假设有关系 **R(A, B, C)**，其函数依赖为 <strong>A → B, B → C</strong>，现在分解成：</p>
+<ul>
+<li><strong>R1(A, B)</strong></li>
+<li><strong>R2(B, C)</strong></li>
+</ul>
+<p>在 <strong>R1 和 R2</strong> 中，我们无法直接在某个表内检查 <strong>A → B, B → C</strong>，必须连接查询，这不满足依赖保持。</p>
+<blockquote>
+<p><strong>通常，3NF 分解可以保证依赖保持，而 BCNF 分解可能会破坏依赖保持</strong>。</p>
+</blockquote>
+<h3 id="3-维持数据库的最小冗余（避免数据冗余）"><a href="#3-维持数据库的最小冗余（避免数据冗余）" class="headerlink" title="3. 维持数据库的最小冗余（避免数据冗余）"></a><strong>3. 维持数据库的最小冗余（避免数据冗余）</strong></h3><p><strong>分解后的关系应减少数据冗余，同时避免引入额外的冗余信息</strong>，即：</p>
+<blockquote>
+<p><strong>避免由于分解导致的重复存储数据，提高存储效率，减少更新异常。</strong></p>
+</blockquote>
+<p><strong>重要性：</strong>  </p>
+<ul>
+<li>过多的冗余会导致更新异常（如同一个值需要在多处修改）。  </li>
+<li>冗余会浪费存储空间，降低数据库操作的效率。</li>
+</ul>
+<p><strong>示例（存在冗余）：</strong><br>假设有关系 **R(学号, 课程, 教师)**，其中函数依赖为 <strong>(学号, 课程) → 教师</strong>。<br>如果错误地分解成：</p>
+<ul>
+<li><strong>R1(学号, 课程)</strong></li>
+<li><strong>R2(课程, 教师)</strong></li>
+</ul>
+<p>那么，如果一个课程由多个学生选修，则在 <strong>R2</strong> 中，同一门课程和教师的组合会被多次存储，增加冗余。</p>
+<p>通常，BCNF 分解可以消除冗余，而 3NF 可能仍然存在少量冗余（但可以保持依赖）。</p>
+<h2 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a><strong>总结</strong></h2><table>
+<thead>
+<tr>
+<th><strong>准则</strong></th>
+<th><strong>要求</strong></th>
+<th><strong>重要性</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>无损连接性</strong></td>
+<td>分解后可以通过连接操作恢复原始关系</td>
+<td>确保数据不会丢失</td>
+</tr>
+<tr>
+<td><strong>依赖保持</strong></td>
+<td>分解后仍能保持原始的所有函数依赖</td>
+<td>避免查询时需要额外的连接操作</td>
+</tr>
+<tr>
+<td><strong>最小冗余</strong></td>
+<td>避免重复存储数据，减少存储空间占用</td>
+<td>提高数据库的存储效率，减少更新异常</td>
+</tr>
+</tbody></table>
+<p>在实际应用中：</p>
+<ul>
+<li><strong>3NF 分解通常能保证“无损连接性”和“依赖保持”，但可能仍然存在少量冗余。</strong></li>
+<li><strong>BCNF 分解可以消除冗余，但可能会破坏依赖保持，需要额外的查询来维护完整性。</strong></li>
+</ul>
+<p>在数据库设计中，通常需要在这三者之间进行<strong>权衡</strong>，以选择最适合应用需求的范式。</p>
+<h1 id="第8章-数据库保护"><a href="#第8章-数据库保护" class="headerlink" title="第8章 数据库保护"></a>第8章 数据库保护</h1><h2 id="事务的基本概念"><a href="#事务的基本概念" class="headerlink" title="事务的基本概念"></a>事务的基本概念</h2><h3 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h3><h3 id="事务的特征"><a href="#事务的特征" class="headerlink" title="事务的特征"></a>事务的特征</h3><h3 id="SQL事务处理模型"><a href="#SQL事务处理模型" class="headerlink" title="SQL事务处理模型"></a>SQL事务处理模型</h3><h2 id="并发控制"><a href="#并发控制" class="headerlink" title="并发控制"></a>并发控制</h2><h3 id="并发控制概述"><a href="#并发控制概述" class="headerlink" title="并发控制概述"></a>并发控制概述</h3><h3 id="并发控制措施"><a href="#并发控制措施" class="headerlink" title="并发控制措施"></a>并发控制措施</h3><ul>
+<li>控制目标：事务运行过程中尽可能隔离事务外操作对本事务数据环境的影响。</li>
+<li>在数据库环境下，并发控制的主要方式是封锁机制，即加锁（Locking），加锁是一种并行控制技术，是用来调整对共享目标，如DB中共享的记录并行存取的技术。</li>
+<li>在数据库管理系统（DBMS）中，<strong>锁（Lock）</strong>用于控制并发访问，防止数据不一致和丢失更新问题。其中，<strong>共享锁（Shared Lock, S 锁）</strong>和<strong>排他锁（Exclusive Lock, X 锁）</strong>是两种最基本的锁机制。<div class="tip warning faa-parent animated-hover"><p class="faa-horizontal"> 在大多数数据库管理系统（如 MySQL、PostgreSQL、SQL Server 等）中：<br>
+SELECT 语句默认不会加锁（除非显式使用 FOR SHARE 或 FOR UPDATE）。<br>
+UPDATE、DELETE、INSERT 语句都会自动申请排他锁（X 锁）。</p></div></li>
+</ul>
+<h4 id="1-共享锁（S-锁）"><a href="#1-共享锁（S-锁）" class="headerlink" title="1. 共享锁（S 锁）"></a><strong>1. 共享锁（S 锁）</strong></h4><ul>
+<li><p><strong>定义</strong><br>共享锁允许多个事务<strong>同时读取</strong>数据，但<strong>不允许修改数据</strong>。</p>
+</li>
+<li><p><strong>特性</strong></p>
+<ul>
+<li><strong>多个事务可以共享同一个数据的共享锁</strong>，因此可以同时执行 <strong>SELECT</strong> 语句，不会互相阻塞。</li>
+<li><strong>如果一个事务持有共享锁，其他事务仍然可以申请共享锁</strong>，但不能申请排他锁（X 锁）。</li>
+<li><strong>共享锁适用于只读操作</strong>，如 <code>SELECT ... FROM</code> 语句。</li>
+</ul>
+</li>
+<li><p><strong>示例</strong><br>假设有一个<strong>银行账户表</strong>，现在有两个事务：</p>
+<ul>
+<li><strong>事务 A（读取余额）：</strong></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">BEGIN</span>;</span><br><span class="line"><span class="keyword">SELECT</span> 余额 <span class="keyword">FROM</span> 账户 <span class="keyword">WHERE</span> 账号 <span class="operator">=</span> <span class="string">&#x27;123456&#x27;</span> <span class="keyword">FOR</span> SHARE;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>事务 B（读取余额）：</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">BEGIN</span>;</span><br><span class="line"><span class="keyword">SELECT</span> 余额 <span class="keyword">FROM</span> 账户 <span class="keyword">WHERE</span> 账号 <span class="operator">=</span> <span class="string">&#x27;123456&#x27;</span> <span class="keyword">FOR</span> SHARE;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>结果：</strong>  </p>
+<ul>
+<li>事务 A 和 事务 B 都可以同时读取账户余额，因为共享锁允许多个事务同时读取数据。</li>
+</ul>
+</li>
+<li><p><strong>但如果事务 C 想要更新余额（加锁方式为排他锁 X），则会被阻塞：</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">BEGIN</span>;</span><br><span class="line"><span class="keyword">UPDATE</span> 账户 <span class="keyword">SET</span> 余额 <span class="operator">=</span> 余额 <span class="operator">-</span> <span class="number">500</span> <span class="keyword">WHERE</span> 账号 <span class="operator">=</span> <span class="string">&#x27;123456&#x27;</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>因为 S 锁阻止了 X 锁的获取，防止数据被修改。</strong></p>
+</li>
+</ul>
+<h4 id="2-排他锁（X-锁）"><a href="#2-排他锁（X-锁）" class="headerlink" title="2. 排他锁（X 锁）"></a><strong>2. 排他锁（X 锁）</strong></h4><ul>
+<li><p><strong>定义</strong><br>用于<strong>写操作</strong>。一个事务持有排他锁后，其他事务不能同时持有共享锁或排他锁，从而确保在写操作期间数据不会被其他事务读取或修改。</p>
+</li>
+<li><p><strong>特性</strong></p>
+<ul>
+<li><strong>排他锁是独占的</strong>，同一时间只能有一个事务对该数据持有排他锁。</li>
+<li><strong>持有排他锁的事务可以读取和修改数据</strong>，其他事务必须等该锁释放后才能访问该数据。</li>
+<li><strong>适用于 UPDATE、DELETE、INSERT 等操作</strong>。</li>
+</ul>
+</li>
+<li><p><strong>示例</strong><br>假设有一个<strong>转账事务</strong>：</p>
+<ul>
+<li><strong>事务 A（转账操作，获取排他锁 X）</strong></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">BEGIN</span>;</span><br><span class="line"><span class="keyword">UPDATE</span> 账户 <span class="keyword">SET</span> 余额 <span class="operator">=</span> 余额 <span class="operator">-</span> <span class="number">500</span> <span class="keyword">WHERE</span> 账号 <span class="operator">=</span> <span class="string">&#x27;123456&#x27;</span>; <span class="comment">-- 申请 X 锁</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>此时：</strong></p>
+<ul>
+<li>事务 A 持有排他锁，其他事务（如事务 B）不能再获取<strong>共享锁（S 锁）</strong>或<strong>排他锁（X 锁）</strong>。</li>
+</ul>
+</li>
+<li><p><strong>事务 B（想要读取账户余额，但被阻塞）</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">BEGIN</span>;</span><br><span class="line"><span class="keyword">SELECT</span> 余额 <span class="keyword">FROM</span> 账户 <span class="keyword">WHERE</span> 账号 <span class="operator">=</span> <span class="string">&#x27;123456&#x27;</span> <span class="keyword">FOR</span> SHARE; <span class="comment">-- 被阻塞</span></span><br></pre></td></tr></table></figure>
+<p><strong>事务 B 被阻塞，直到事务 A 提交或回滚后，X 锁被释放。</strong></p>
+</li>
+</ul>
+<h4 id="3-共享锁-vs-排他锁-对比"><a href="#3-共享锁-vs-排他锁-对比" class="headerlink" title="3. 共享锁 vs. 排他锁 对比"></a><strong>3. 共享锁 vs. 排他锁 对比</strong></h4><table>
+<thead>
+<tr>
+<th><strong>锁类型</strong></th>
+<th><strong>是否允许多个事务同时持有</strong></th>
+<th><strong>是否允许读取数据</strong></th>
+<th><strong>是否允许修改数据</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>共享锁（S）</strong></td>
+<td>是</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td><strong>排他锁（X）</strong></td>
+<td>否</td>
+<td>是</td>
+<td>是</td>
+</tr>
+</tbody></table>
+<hr>
+<h4 id="4-兼容性（锁冲突情况）"><a href="#4-兼容性（锁冲突情况）" class="headerlink" title="4. 兼容性（锁冲突情况）"></a><strong>4. 兼容性（锁冲突情况）</strong></h4><p>锁的兼容性决定了事务是否可以同时持有锁：</p>
+<table>
+<thead>
+<tr>
+<th>事务 B\事务 A</th>
+<th><strong>共享锁（S）</strong></th>
+<th><strong>排他锁（X）</strong></th>
+<th><strong>无锁</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>共享锁（S）</strong></td>
+<td>✅（允许）</td>
+<td>❌（阻塞）</td>
+<td>✅（允许）</td>
+</tr>
+<tr>
+<td><strong>排他锁（X）</strong></td>
+<td>❌（阻塞）</td>
+<td>❌（阻塞）</td>
+<td>✅（允许）</td>
+</tr>
+<tr>
+<td><strong>无锁</strong></td>
+<td>✅（允许）</td>
+<td>✅（允许）</td>
+<td>✅（允许）</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>S 锁 vs. S 锁</strong> ✅（可以共存）</li>
+<li><strong>S 锁 vs. X 锁</strong> ❌（冲突，S 锁必须释放后才能获取 X 锁）</li>
+<li><strong>X 锁 vs. X 锁</strong> ❌（冲突，X 锁是独占的）</li>
+</ul>
+<hr>
+<h4 id="5-使用场景"><a href="#5-使用场景" class="headerlink" title="5. 使用场景"></a><strong>5. 使用场景</strong></h4><table>
+<thead>
+<tr>
+<th><strong>操作类型</strong></th>
+<th><strong>适用的锁类型</strong></th>
+<th><strong>示例 SQL</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>只读查询</td>
+<td>共享锁（S）</td>
+<td><code>SELECT * FROM 账户 WHERE 账号 = &#39;123456&#39; FOR SHARE;</code></td>
+</tr>
+<tr>
+<td>更新数据</td>
+<td>排他锁（X）</td>
+<td><code>UPDATE 账户 SET 余额 = 余额 - 500 WHERE 账号 = &#39;123456&#39;;</code></td>
+</tr>
+<tr>
+<td>删除数据</td>
+<td>排他锁（X）</td>
+<td><code>DELETE FROM 账户 WHERE 账号 = &#39;123456&#39;;</code></td>
+</tr>
+<tr>
+<td>事务控制</td>
+<td>排他锁（X）</td>
+<td><code>SELECT * FROM 账户 WHERE 账号 = &#39;123456&#39; FOR UPDATE;</code></td>
+</tr>
+</tbody></table>
+<h4 id="6-共享锁与排他锁的实际应用"><a href="#6-共享锁与排他锁的实际应用" class="headerlink" title="6. 共享锁与排他锁的实际应用"></a><strong>6. 共享锁与排他锁的实际应用</strong></h4><ul>
+<li><strong>示例：银行转账</strong><br>假设 Alice 向 Bob 转账 500 元，涉及两个账户：<ol>
+<li>读取 Alice 账户余额（需要 S 锁）</li>
+<li>读取 Bob 账户余额（需要 S 锁）</li>
+<li>修改 Alice 余额（需要 X 锁）</li>
+<li>修改 Bob 余额（需要 X 锁）</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">BEGIN</span>;</span><br><span class="line"><span class="comment">-- 读取 Alice 余额</span></span><br><span class="line"><span class="keyword">SELECT</span> 余额 <span class="keyword">FROM</span> 账户 <span class="keyword">WHERE</span> 账号 <span class="operator">=</span> <span class="string">&#x27;Alice&#x27;</span> <span class="keyword">FOR</span> SHARE;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 读取 Bob 余额</span></span><br><span class="line"><span class="keyword">SELECT</span> 余额 <span class="keyword">FROM</span> 账户 <span class="keyword">WHERE</span> 账号 <span class="operator">=</span> <span class="string">&#x27;Bob&#x27;</span> <span class="keyword">FOR</span> SHARE;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- Alice 扣钱</span></span><br><span class="line"><span class="keyword">UPDATE</span> 账户 <span class="keyword">SET</span> 余额 <span class="operator">=</span> 余额 <span class="operator">-</span> <span class="number">500</span> <span class="keyword">WHERE</span> 账号 <span class="operator">=</span> <span class="string">&#x27;Alice&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- Bob 收钱</span></span><br><span class="line"><span class="keyword">UPDATE</span> 账户 <span class="keyword">SET</span> 余额 <span class="operator">=</span> 余额 <span class="operator">+</span> <span class="number">500</span> <span class="keyword">WHERE</span> 账号 <span class="operator">=</span> <span class="string">&#x27;Bob&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">COMMIT</span>;</span><br></pre></td></tr></table></figure>
+<p>在这个过程中：</p>
+<ul>
+<li>读取账户余额时，使用 <strong>S 锁</strong>，确保数据不会被其他事务修改。</li>
+<li>更新余额时，使用 <strong>X 锁</strong>，确保数据的一致性和防止并发问题。<blockquote>
+<p><strong>一致性：</strong>一致性指的是数据库在事务执行前后必须保持数据的完整性和正确性，不允许出现违反约束或逻辑错误的情况。<br><strong>并发问题：</strong>并发问题指的是多个事务同时操作数据库时，可能导致数据不一致或错误的情况。</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h4 id="7-死锁问题"><a href="#7-死锁问题" class="headerlink" title="7. 死锁问题"></a><strong>7. 死锁问题</strong></h4><p>当两个事务各自持有一个锁，并等待对方释放锁时，会出现<strong>死锁（Deadlock）</strong>。</p>
+<ul>
+<li><strong>示例死锁情况</strong></li>
+</ul>
+<ol>
+<li>事务 A 锁住了行 <strong>Alice</strong>，然后尝试锁定 <strong>Bob</strong>。</li>
+<li>事务 B 锁住了行 <strong>Bob</strong>，然后尝试锁定 <strong>Alice</strong>。</li>
+<li>由于相互等待，发生死锁。</li>
+</ol>
+<ul>
+<li><strong>解决方案：</strong><ul>
+<li><strong>设置超时时间</strong>（<code>LOCK_TIMEOUT</code>）</li>
+<li><strong>按顺序申请锁</strong>，避免交叉锁定<blockquote>
+<p>按顺序加锁并不是完全避免等待，而是通过确保所有事务按照相同的顺序请求资源，<strong>避免了循环等待</strong>，从而减少了死锁的可能性。这里的关键是避免循环等待条件。</p>
+</blockquote>
+</li>
+<li><strong>数据库自动检测死锁</strong>，强制回滚一个事务</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="总结-2"><a href="#总结-2" class="headerlink" title="总结"></a><strong>总结</strong></h4><ol>
+<li><strong>共享锁（S 锁）</strong> 允许多个事务<strong>同时读取</strong>数据，但不允许修改。</li>
+<li><strong>排他锁（X 锁）</strong> 允许<strong>读取和修改</strong>数据，但不能共享。</li>
+<li><strong>X 锁是独占的</strong>，不能与任何其他锁共存，而 S 锁可以共享。</li>
+<li><strong>锁兼容性决定事务是否会被阻塞</strong>，X 锁会阻止所有其他事务访问该数据。</li>
+<li><strong>在数据库事务（如银行转账）中，合理使用 S 锁和 X 锁可以防止数据不一致</strong>。</li>
+<li><strong>死锁是数据库锁机制中的常见问题</strong>，应使用适当的策略（如超时、顺序加锁）来避免。</li>
+</ol>
+<h3 id="封锁协议"><a href="#封锁协议" class="headerlink" title="封锁协议"></a>封锁协议</h3><ul>
+<li><p><strong>一级封锁协议：</strong>事务在修改数据时加排他锁，直到事务结束才释放。这种协议可以防止丢失修改，但不保证不读脏数据和可重复读。</p>
+</li>
+<li><p><strong>二级封锁协议：</strong>在一级的基础上，事务在读取数据时加共享锁，但读取完成后立即释放共享锁。这种协议可以防止丢失修改和不读脏数据，但不保证可重复读。</p>
+<blockquote>
+<p><strong>加共享锁的目的：</strong></p>
+</blockquote>
+<ol>
+<li><strong>防止修改：</strong>当一个事务对某个数据项加共享锁时，其他事务不能对该数据项加排他锁（X锁），从而防止了数据的修改。这确保了在共享锁持有期间，数据不会被其他事务更改。</li>
+<li><strong>允许并发读取：</strong>多个事务可以同时对同一数据项加共享锁，这意味着多个事务可以并发读取该数据项，而不会相互阻塞。这提高了系统的并发性能。</li>
+</ol>
+</li>
+<li><p><strong>三级封锁协议：</strong>在二级的基础上，事务在读取数据时加共享锁，并保持到事务结束。这种协议可以防止丢失修改、不读脏数据和保证可重复读。</p>
+<img src="/articles/7de3dde6/不同级别的锁协议.png" width=70% height=70% /></li>
+</ul>
+<h3 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h3><ul>
+<li><strong>预防死锁的方法：</strong><ol>
+<li><strong>一次封锁法</strong><br>一次封锁法是每个事务一次将所有要使用的数据全部加锁。</li>
+<li><strong>顺序封锁法</strong><br>顺序封锁法是预先对数据对象规定一个封锁顺序，所有事务都按这个顺序封锁。</li>
+</ol>
+</li>
+</ul>
+<h3 id="并发调度的可串行性"><a href="#并发调度的可串行性" class="headerlink" title="并发调度的可串行性"></a>并发调度的可串行性</h3><ul>
+<li>多个事务的并发执行是正确的，当且仅当其结果与按某一顺序的串行执行的结果相同，则我们称这种调度为<strong>可串行化的调度</strong>。</li>
+<li>可串行性是并发事务正确性的准则，按这个准则，一个给定的并发调度，当且仅当它是可串行化的时，才认为是正确的调度。</li>
+</ul>
+<h3 id="两段锁协议"><a href="#两段锁协议" class="headerlink" title="两段锁协议"></a>两段锁协议</h3><ul>
+<li>两段锁协议是实现<strong>可串行化调度</strong>的<strong>充分条件</strong>。</li>
+<li>可以将每个事务分成两个时期：<strong>申请封锁期</strong>和<strong>释放封锁期</strong>，申请期申请要进行的封锁，释放期释放所占有的封锁。</li>
+<li>在申请期不允许释放任何锁，在释放期不允许申请任何锁，这就是两段式封锁。<img src="/articles/7de3dde6/两段锁协议.png" width=70% height=70% /></li>
+</ul>
+<h2 id="数据库备份与恢复"><a href="#数据库备份与恢复" class="headerlink" title="数据库备份与恢复"></a>数据库备份与恢复</h2><h3 id="数据库故障的种类"><a href="#数据库故障的种类" class="headerlink" title="数据库故障的种类"></a>数据库故障的种类</h3><h4 id="事务内部的故障"><a href="#事务内部的故障" class="headerlink" title="事务内部的故障"></a>事务内部的故障</h4><ul>
+<li>事务故障意味着事务没有达到预期的终点（COMMIT或ROLLBACK），因此，数据库可能处于不正确的状态。</li>
+</ul>
+<h4 id="系统故障"><a href="#系统故障" class="headerlink" title="系统故障"></a>系统故障</h4><ul>
+<li>指造成系统停止运转、系统要重启的故障。例如，硬件错误（CPU故障）、操作系统故障、突然停电等。</li>
+</ul>
+<h4 id="其它故障"><a href="#其它故障" class="headerlink" title="其它故障"></a>其它故障</h4><ul>
+<li>介质故障或由计算机病毒引起的故障或破坏。</li>
+</ul>
+<h3 id="数据库备份"><a href="#数据库备份" class="headerlink" title="数据库备份"></a>数据库备份</h3><ul>
+<li><p>指定期或不定期地对数据库数据进行复制。</p>
+</li>
+<li><p>可以复制到本地机器上，也可以复制到其它机器上。</p>
+</li>
+<li><p>备份的介质可以是磁带也可以是磁盘，但通常选用<strong>磁带</strong>。</p>
+<blockquote>
+<p>现代备份策略通常是混合使用磁带和磁盘，根据数据的重要性、访问频率和恢复需求选择合适的介质。<br>对于需要快速恢复的数据，磁盘是更好的选择；对于长期归档和大规模数据备份，磁带仍然是一个经济高效的选择。</p>
+</blockquote>
+</li>
+<li><p>是保证系统安全的一项重要措施。</p>
+</li>
+<li><p>在制定备份策略时，应考虑如下几个方面：</p>
+<ul>
+<li><strong>备份的内容</strong> </li>
+<li><strong>备份频率</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="数据库恢复"><a href="#数据库恢复" class="headerlink" title="数据库恢复"></a>数据库恢复</h3><ol>
+<li>恢复策略</li>
+</ol>
+<ul>
+<li>事务故障的恢复 </li>
+<li>系统故障的恢复 </li>
+<li>介质故障的恢复</li>
+</ul>
+<ol start="2">
+<li>恢复方法</li>
+</ol>
+<ul>
+<li>利用备份技术</li>
+<li>利用事务日志</li>
+<li>利用镜像技术</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://lucy23.blog">Lucy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://lucy23.blog/articles/7de3dde6.html">http://lucy23.blog/articles/7de3dde6.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/articles/50b60a8e.html"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">考研操作系统</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">1.</span> <span class="toc-text">第三章 关系数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B%E6%A6%82%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text">关系模型概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-number">1.1.1.</span> <span class="toc-text">关系数据结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%93%8D%E4%BD%9C"><span class="toc-number">1.1.2.</span> <span class="toc-text">关系操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%A0%E7%BB%9F%E7%9A%84%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">传统的关系运算</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%93%E9%97%A8%E7%9A%84%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">专门的关系运算</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C"><span class="toc-number">1.1.3.</span> <span class="toc-text">关系模型的数据操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%AE%8C%E6%95%B4%E6%80%A7%E7%BA%A6%E6%9D%9F"><span class="toc-number">1.1.4.</span> <span class="toc-text">数据完整性约束</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD%E4%B8%8E%E5%BD%A2%E5%BC%8F%E5%8C%96%E5%AE%9A%E4%B9%89"><span class="toc-number">1.2.</span> <span class="toc-text">关系数据模型的基本术语与形式化定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD"><span class="toc-number">1.2.1.</span> <span class="toc-text">关系数据模型的基本术语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%8F%8A%E5%85%B6%E5%BD%A2%E5%BC%8F%E5%8C%96%E5%AE%9A%E4%B9%89"><span class="toc-number">1.2.2.</span> <span class="toc-text">关系数据结构及其形式化定义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7%E7%BA%A6%E6%9D%9F"><span class="toc-number">1.3.</span> <span class="toc-text">关系模型的完整性约束</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E4%BD%93%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="toc-number">1.3.1.</span> <span class="toc-text">实体完整性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E7%85%A7%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="toc-number">1.3.2.</span> <span class="toc-text">参照完整性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E5%AE%9A%E4%B9%89%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="toc-number">1.3.3.</span> <span class="toc-text">用户定义的完整性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0"><span class="toc-number">1.4.</span> <span class="toc-text">关系代数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">1.4.1.</span> <span class="toc-text">关系运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%A0%E7%BB%9F%E7%9A%84%E9%9B%86%E5%90%88%E8%BF%90%E7%AE%97"><span class="toc-number">1.4.2.</span> <span class="toc-text">传统的集合运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%93%E9%97%A8%E7%9A%84%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97-1"><span class="toc-number">1.4.3.</span> <span class="toc-text">专门的关系运算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%89%E6%8B%A9"><span class="toc-number">1.4.3.1.</span> <span class="toc-text">选择</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8A%95%E5%BD%B1"><span class="toc-number">1.4.3.2.</span> <span class="toc-text">投影</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.4.3.3.</span> <span class="toc-text">连接</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC4%E7%AB%A0-SQL%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80"><span class="toc-number">2.</span> <span class="toc-text">第4章 SQL语言基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">2.1.</span> <span class="toc-text">基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL%E8%AF%AD%E8%A8%80%E7%9A%84%E5%8F%91%E5%B1%95"><span class="toc-number">2.1.1.</span> <span class="toc-text">SQL语言的发展</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-number">2.1.2.</span> <span class="toc-text">SQL语言的特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL%E8%AF%AD%E8%A8%80%E5%8A%9F%E8%83%BD%E6%A6%82%E8%BF%B0"><span class="toc-number">2.1.3.</span> <span class="toc-text">SQL语言功能概述</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.</span> <span class="toc-text">SQL的数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%80%BC%E5%9E%8B"><span class="toc-number">2.2.1.</span> <span class="toc-text">数值型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%9E%8B"><span class="toc-number">2.2.2.</span> <span class="toc-text">字符串型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E7%BC%96%E7%A0%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.2.1.</span> <span class="toc-text">普通编码字符串类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%9F%E4%B8%80%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.2.2.</span> <span class="toc-text">统一字符编码字符串类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.2.2.3.</span> <span class="toc-text">二进制字符串类型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E5%9E%8B"><span class="toc-number">2.2.3.</span> <span class="toc-text">日期时间型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%A7%E5%B8%81%E5%9E%8B"><span class="toc-number">2.2.4.</span> <span class="toc-text">货币型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89%E3%80%81%E5%88%A0%E9%99%A4%E5%8F%8A%E4%BF%AE%E6%94%B9"><span class="toc-number">2.3.</span> <span class="toc-text">基本表的定义、删除及修改</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89%E4%B8%8E%E5%88%A0%E9%99%A4"><span class="toc-number">2.3.1.</span> <span class="toc-text">基本表的定义与删除</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E8%A1%A8%E7%BB%93%E6%9E%84"><span class="toc-number">2.3.2.</span> <span class="toc-text">修改表结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E5%8A%9F%E8%83%BD"><span class="toc-number">2.4.</span> <span class="toc-text">数据查询功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="toc-number">2.4.1.</span> <span class="toc-text">查询语句的基本结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.4.2.</span> <span class="toc-text">简单查询</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E8%A1%A8%E4%B8%AD%E8%8B%A5%E5%B9%B2%E5%88%97"><span class="toc-number">2.4.2.1.</span> <span class="toc-text">选择表中若干列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E8%A1%A8%E4%B8%AD%E8%8B%A5%E5%B9%B2%E5%85%83%E7%BB%84"><span class="toc-number">2.4.2.2.</span> <span class="toc-text">选择表中若干元组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E6%9F%A5%E8%AF%A2%E7%BB%93%E6%9E%9C%E8%BF%9B%E8%A1%8C%E6%8E%92%E5%BA%8F"><span class="toc-number">2.4.2.3.</span> <span class="toc-text">对查询结果进行排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0%E6%B1%87%E6%80%BB%E6%95%B0%E6%8D%AE"><span class="toc-number">2.4.2.4.</span> <span class="toc-text">使用计算函数汇总数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E6%9F%A5%E8%AF%A2%E7%BB%93%E6%9E%9C%E8%BF%9B%E8%A1%8C%E5%88%86%E7%BB%84%E8%AE%A1%E7%AE%97"><span class="toc-number">2.4.2.5.</span> <span class="toc-text">对查询结果进行分组计算</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%A1%A8%E8%BF%9E%E6%8E%A5%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.4.3.</span> <span class="toc-text">多表连接查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%90%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.4.4.</span> <span class="toc-text">子查询</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%94%B9%E5%8A%9F%E8%83%BD"><span class="toc-number">2.5.</span> <span class="toc-text">数据更改功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE"><span class="toc-number">2.5.1.</span> <span class="toc-text">插入数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%96%B0%E6%95%B0%E6%8D%AE"><span class="toc-number">2.5.2.</span> <span class="toc-text">更新数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE"><span class="toc-number">2.5.3.</span> <span class="toc-text">删除数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E7%AB%8B%E4%B8%8E%E5%88%A0%E9%99%A4%E7%B4%A2%E5%BC%95"><span class="toc-number">2.6.</span> <span class="toc-text">建立与删除索引</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">2.6.1.</span> <span class="toc-text">索引的概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">2.6.2.</span> <span class="toc-text">索引的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%81%9A%E7%B0%87%E7%B4%A2%E5%BC%95"><span class="toc-number">2.6.2.1.</span> <span class="toc-text">聚簇索引</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9D%9E%E8%81%9A%E7%B0%87%E7%B4%A2%E5%BC%95"><span class="toc-number">2.6.2.2.</span> <span class="toc-text">非聚簇索引</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%94%AF%E4%B8%80%E7%B4%A2%E5%BC%95"><span class="toc-number">2.6.2.3.</span> <span class="toc-text">唯一索引</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%92%8C%E5%88%A0%E9%99%A4%E7%B4%A2%E5%BC%95"><span class="toc-number">2.6.3.</span> <span class="toc-text">创建和删除索引</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC6%E7%AB%A0-%E5%AE%9E%E7%8E%B0%E6%95%B0%E6%8D%AE%E5%AE%8C%E6%95%B4%E6%80%A7%E7%BA%A6%E6%9D%9F"><span class="toc-number">3.</span> <span class="toc-text">第6章 实现数据完整性约束</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%AE%8C%E6%95%B4%E6%80%A7%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">3.1.</span> <span class="toc-text">数据完整性基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E5%A3%B0%E6%98%8E%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="toc-number">3.2.</span> <span class="toc-text">实现声明完整性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E8%BF%87%E7%A8%8B%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="toc-number">3.3.</span> <span class="toc-text">实现过程完整性</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC7%E7%AB%A0-%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A7%84%E8%8C%83%E5%8C%96%E7%90%86%E8%AE%BA"><span class="toc-number">4.</span> <span class="toc-text">第7章 关系数据库规范化理论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E4%BE%9D%E8%B5%96"><span class="toc-number">4.1.</span> <span class="toc-text">函数依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E8%A7%84%E8%8C%83%E5%8C%96"><span class="toc-number">4.2.</span> <span class="toc-text">关系规范化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%BC%8F%E4%B8%AD%E7%9A%84%E7%A0%81"><span class="toc-number">4.2.1.</span> <span class="toc-text">关系模式中的码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8C%83%E5%BC%8F"><span class="toc-number">4.2.2.</span> <span class="toc-text">范式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E8%8C%83%E5%BC%8F%EF%BC%881NF%EF%BC%89%E2%80%94%E2%80%94%E7%A1%AE%E4%BF%9D%E5%8E%9F%E5%AD%90%E6%80%A7"><span class="toc-number">4.2.2.1.</span> <span class="toc-text">第一范式（1NF）——确保原子性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E8%8C%83%E5%BC%8F%EF%BC%882NF%EF%BC%89%E2%80%94%E2%80%94%E6%B6%88%E9%99%A4%E9%83%A8%E5%88%86%E4%BE%9D%E8%B5%96"><span class="toc-number">4.2.2.2.</span> <span class="toc-text">第二范式（2NF）——消除部分依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E8%8C%83%E5%BC%8F%EF%BC%883NF%EF%BC%89%E2%80%94%E2%80%94%E6%B6%88%E9%99%A4%E4%BC%A0%E9%80%92%E4%BE%9D%E8%B5%96"><span class="toc-number">4.2.2.3.</span> <span class="toc-text">第三范式（3NF）——消除传递依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">4.2.2.4.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#BCNF"><span class="toc-number">4.2.2.5.</span> <span class="toc-text">BCNF</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3NF-%E4%B8%8E-BCNF-%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">4.2.2.6.</span> <span class="toc-text">3NF 与 BCNF 的关系</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BCNF-%E7%A4%BA%E4%BE%8B"><span class="toc-number">4.3.</span> <span class="toc-text">BCNF 示例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B%EF%BC%88%E6%BB%A1%E8%B6%B33NF%EF%BC%8C%E4%BD%86%E4%B8%8D%E6%BB%A1%E8%B6%B3BCNF%EF%BC%89%EF%BC%9A"><span class="toc-number">4.3.1.</span> <span class="toc-text">示例（满足3NF，但不满足BCNF）：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E5%90%8E%EF%BC%88%E6%BB%A1%E8%B6%B3BCNF%EF%BC%89%EF%BC%9A"><span class="toc-number">4.3.2.</span> <span class="toc-text">修改后（满足BCNF）：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%A6%E7%94%9F-%E9%80%89%E8%AF%BE%E8%A1%A8"><span class="toc-number">4.3.2.1.</span> <span class="toc-text">学生-选课表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%BE%E7%A8%8B-%E6%95%99%E5%B8%88%E8%A1%A8"><span class="toc-number">4.3.2.2.</span> <span class="toc-text">课程-教师表</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3NF-%E4%B8%8E-BCNF-%E7%9A%84%E5%AF%B9%E6%AF%94%E6%80%BB%E7%BB%93"><span class="toc-number">4.4.</span> <span class="toc-text">3NF 与 BCNF 的对比总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%88%86%E8%A7%A3%E5%87%86%E5%88%99"><span class="toc-number">4.5.</span> <span class="toc-text">关系模式的分解准则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%97%A0%E6%8D%9F%E8%BF%9E%E6%8E%A5%E6%80%A7%EF%BC%88Lossless-Join%EF%BC%89"><span class="toc-number">4.5.1.</span> <span class="toc-text">1. 无损连接性（Lossless Join）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%BE%9D%E8%B5%96%E4%BF%9D%E6%8C%81%EF%BC%88Dependency-Preservation%EF%BC%89"><span class="toc-number">4.5.2.</span> <span class="toc-text">2. 依赖保持（Dependency Preservation）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%BB%B4%E6%8C%81%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E6%9C%80%E5%B0%8F%E5%86%97%E4%BD%99%EF%BC%88%E9%81%BF%E5%85%8D%E6%95%B0%E6%8D%AE%E5%86%97%E4%BD%99%EF%BC%89"><span class="toc-number">4.5.3.</span> <span class="toc-text">3. 维持数据库的最小冗余（避免数据冗余）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-1"><span class="toc-number">4.6.</span> <span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC8%E7%AB%A0-%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BF%9D%E6%8A%A4"><span class="toc-number">5.</span> <span class="toc-text">第8章 数据库保护</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">5.1.</span> <span class="toc-text">事务的基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1"><span class="toc-number">5.1.1.</span> <span class="toc-text">事务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">5.1.2.</span> <span class="toc-text">事务的特征</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86%E6%A8%A1%E5%9E%8B"><span class="toc-number">5.1.3.</span> <span class="toc-text">SQL事务处理模型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6"><span class="toc-number">5.2.</span> <span class="toc-text">并发控制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6%E6%A6%82%E8%BF%B0"><span class="toc-number">5.2.1.</span> <span class="toc-text">并发控制概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6%E6%8E%AA%E6%96%BD"><span class="toc-number">5.2.2.</span> <span class="toc-text">并发控制措施</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%85%B1%E4%BA%AB%E9%94%81%EF%BC%88S-%E9%94%81%EF%BC%89"><span class="toc-number">5.2.2.1.</span> <span class="toc-text">1. 共享锁（S 锁）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%8E%92%E4%BB%96%E9%94%81%EF%BC%88X-%E9%94%81%EF%BC%89"><span class="toc-number">5.2.2.2.</span> <span class="toc-text">2. 排他锁（X 锁）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E5%85%B1%E4%BA%AB%E9%94%81-vs-%E6%8E%92%E4%BB%96%E9%94%81-%E5%AF%B9%E6%AF%94"><span class="toc-number">5.2.2.3.</span> <span class="toc-text">3. 共享锁 vs. 排他锁 对比</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E5%85%BC%E5%AE%B9%E6%80%A7%EF%BC%88%E9%94%81%E5%86%B2%E7%AA%81%E6%83%85%E5%86%B5%EF%BC%89"><span class="toc-number">5.2.2.4.</span> <span class="toc-text">4. 兼容性（锁冲突情况）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-number">5.2.2.5.</span> <span class="toc-text">5. 使用场景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E5%85%B1%E4%BA%AB%E9%94%81%E4%B8%8E%E6%8E%92%E4%BB%96%E9%94%81%E7%9A%84%E5%AE%9E%E9%99%85%E5%BA%94%E7%94%A8"><span class="toc-number">5.2.2.6.</span> <span class="toc-text">6. 共享锁与排他锁的实际应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-%E6%AD%BB%E9%94%81%E9%97%AE%E9%A2%98"><span class="toc-number">5.2.2.7.</span> <span class="toc-text">7. 死锁问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-2"><span class="toc-number">5.2.2.8.</span> <span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%81%E9%94%81%E5%8D%8F%E8%AE%AE"><span class="toc-number">5.2.3.</span> <span class="toc-text">封锁协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%BB%E9%94%81"><span class="toc-number">5.2.4.</span> <span class="toc-text">死锁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%B6%E5%8F%91%E8%B0%83%E5%BA%A6%E7%9A%84%E5%8F%AF%E4%B8%B2%E8%A1%8C%E6%80%A7"><span class="toc-number">5.2.5.</span> <span class="toc-text">并发调度的可串行性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E6%AE%B5%E9%94%81%E5%8D%8F%E8%AE%AE"><span class="toc-number">5.2.6.</span> <span class="toc-text">两段锁协议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D"><span class="toc-number">5.3.</span> <span class="toc-text">数据库备份与恢复</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%95%85%E9%9A%9C%E7%9A%84%E7%A7%8D%E7%B1%BB"><span class="toc-number">5.3.1.</span> <span class="toc-text">数据库故障的种类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1%E5%86%85%E9%83%A8%E7%9A%84%E6%95%85%E9%9A%9C"><span class="toc-number">5.3.1.1.</span> <span class="toc-text">事务内部的故障</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E6%95%85%E9%9A%9C"><span class="toc-number">5.3.1.2.</span> <span class="toc-text">系统故障</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B6%E5%AE%83%E6%95%85%E9%9A%9C"><span class="toc-number">5.3.1.3.</span> <span class="toc-text">其它故障</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%87%E4%BB%BD"><span class="toc-number">5.3.2.</span> <span class="toc-text">数据库备份</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E6%81%A2%E5%A4%8D"><span class="toc-number">5.3.3.</span> <span class="toc-text">数据库恢复</span></a></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Lucy</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="Chat"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/cat.js"></script><script defer src="/js/cursor.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js" type="application/javascript"></script><script src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script><script async data-pjax src="/js/newYear.js"></script><canvas id="universe"></canvas><script src="/js/universe.js"></script><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
